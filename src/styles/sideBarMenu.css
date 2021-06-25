@@ -1,0 +1,56 @@
+.sideBarMenus{
+    position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #00000036;
+width: 100vw;
+}
+.sideBarMenu {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 261px;
+  padding: 2px 26px;
+  overflow-y: scroll;
+  bottom: 0;
+  overflow-x: hidden;
+}
+
+.sideBarMenu__closeIcon {
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  padding-left: 45px;
+  padding-top: 12px;
+  padding-right: 10px;
+}
+
+.sideBarMenu > li {
+  list-style: none;
+  width: 100%;
+  border-bottom: 1px solid #d2cdcd;
+  padding: 23px 0 16px 0;
+}
+
+.sideBarMenu > li > a {
+  text-decoration: none;
+  color: black;
+  padding: 0 12px;
+  text-transform: uppercase;
+}
+
+/* hideMenu */
+.hideMenu {
+  transform: translateX(100%);
+}
